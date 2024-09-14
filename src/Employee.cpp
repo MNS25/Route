@@ -32,3 +32,55 @@ void Employee::DisplayInfo()
     person::DisplayInfo();
     cout << "Salary = " << salary << endl;
 }
+
+void Employee::addclient(Client&client){
+    clients.push_back(client);
+
+}
+
+Client Employee::searchclient(int id){
+for (const Cilent & client:clients){
+    if(client.id==id){
+        return client;
+     }
+        return nullptr;
+   }
+}
+
+void listClient() const {
+    for (const auto& client : clients) {
+        cout << "ID: " << client.id;
+        cout << ", Name: " << client.name;
+        cout << ", Password: " << client.password;
+        cout << ", Balance: " << client.balance ;
+        cout << '\n';
+
+
+    }
+}
+
+void editclient(int id;string name,string password,double balance){
+    Client*client=searchclient(id);
+    if(client!=nullptr){
+       client->Setname(name);
+       client->SetPassword(Password);
+       client->setBalance(Balance);
+
+    }else{
+      cout<<"client with Id "<<id<<endl;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
