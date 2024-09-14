@@ -59,7 +59,7 @@ void Employee::listClient() const {
     }
 }
 
-void Employee::editclient(int id;string name,string password,double balance){
+void Employee::editclient(int id,string name,string password,double balance){
     Client*client=searchclient(id);
     if(client!=nullptr){
        client->Setname(name);
