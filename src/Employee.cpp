@@ -67,7 +67,7 @@ void Employee::editclient(int id;string name,string password,double balance){
        client->setBalance(Balance);
 
     }else{
-      cout<<" client with Id "<<id<<endl;
+      cout<<" client with Id "<< id<<endl;
     }
 
 

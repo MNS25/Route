@@ -29,7 +29,8 @@ public:
     Client searchclient(int id);
 
     void listclient();
-    void editclient();
+
+    void editclient(int id ;string name,string password,double balance);
 
 };
 
