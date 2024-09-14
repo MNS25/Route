@@ -47,7 +47,7 @@ for (const Cilent & client:clients){
    }
 }
 
-void listClient() const {
+void Employee::listClient() const {
     for (const auto& client : clients) {
         cout << "ID: " << client.id;
         cout << ", Name: " << client.name;
@@ -59,7 +59,7 @@ void listClient() const {
     }
 }
 
-void editclient(int id;string name,string password,double balance){
+void Employee::editclient(int id;string name,string password,double balance){
     Client*client=searchclient(id);
     if(client!=nullptr){
        client->Setname(name);
@@ -67,7 +67,7 @@ void editclient(int id;string name,string password,double balance){
        client->setBalance(Balance);
 
     }else{
-      cout<<"client with Id "<<id<<endl;
+      cout<<" client with Id "<<id<<endl;
     }
 
 
