@@ -3,6 +3,8 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <Employee.h>
+
 using namespace std;
 Admin::Admin() : Employee(){
 
@@ -12,38 +14,41 @@ employees.push_back(employee);
 }
 
 Employee* Admin::searchEmployee(int id){
-    for (Employee& employee : employees)
-    {
-        if (employee.Getid() == id)
-        {
-            return &employee;
-        }
-    }
-    return nullptr;
-
-}
-
-void Admin::editEmployee(int id, const string& name ,const string& password ,double salary)
-{
-   Employee* emp =searchEmployee(id);
-   if (emp)
+    for (int i=0 ; i<employees.size();i++)
    {
-       emp->Setname(name);
-       emp->Setpassword(password);
-       emp->setSalary(salary);
-   }
-   else{
-    cout <<"Not Found!"<<endl;
+       if(employees.at(i).Getid()==id)
+       {
+            return  &employees.at(i);
+       }
+       return nullptr;
    }
 
 }
 
-void Admin::listEmployee()const
+void Admin::editEmployee(int id,  string Name , string Password ,double salary)
 {
-     for (const Employee& employee : employees)
+   for (int i=0 ; i<employees.size();i++)
+   {
+       if(employees.at(i).Getid()==id)
+       {
+            employees.at(i).Setname(Name);
+            employees.at(i).Setpassword(Password);
+            employees.at(i).setSalary(salary);
+       }
+   }
+
+}
+
+void Admin::listEmployee()
+{
+     for (int i=0 ; i<employees.size();i++)
      {
-         cout <<"ID: "<<employee.Getid()<<", Name: " << employee.Getname()<<", Salary: "<<employee.GetSalary() << endl;
-     }
+        cout << "ID: " << employees.at(i).Getid();
+        cout << ", Name: " << employees.at(i).Getname();
+        cout << ", Password: " << employees.at(i).Getpassword();
+        cout << ", Salary: " << employees.at(i).GetSalary();
+        cout << '\n';
+    }
 
 }
 

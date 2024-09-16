@@ -13,9 +13,9 @@ private:
 public:
         Admin();
         //methods
-        void addEmployee(Employee&employee);
+        void addEmployee(const Employee& employee);
         Employee* searchEmployee(int id);
-        void editEmployee(int id ,string name ,string password ,double salary);
+        void editEmployee(int id,  string Name , string Password ,double salary);
         void listEmployee();
 
 };

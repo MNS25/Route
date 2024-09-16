@@ -3,6 +3,7 @@
 #include <iostream>
 #include<vector>
 #include <person.h>
+#include <Client.h>
 using namespace std;
 
 class Employee : public person
@@ -25,12 +26,9 @@ public:
     void DisplayInfo();
 
     void addclient(Client&client);
-
-    Client searchclient(int id);
-
-    void listclient();
-
-    void editclient(int id ;string name,string password,double balance);
+    Client* searchclient(int id);
+    void listClient();
+    void editClient(int id, string name, string password, double balance);
 
 };
 

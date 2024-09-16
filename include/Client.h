@@ -6,7 +6,7 @@ using namespace std;
 
 class Client :public person
 {
-private:
+protected:
     double balance;
 public:
     Client();

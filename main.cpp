@@ -9,6 +9,7 @@ using namespace std;
 
 int main()
 {
+
     //Admin
     cout << "\nSetting up Admin details..." << endl;
     ofstream TextFile("Admin.txt");
@@ -147,7 +148,7 @@ int main()
     if (client1.withdraw(m))
         client1.checkBalance();
 
-
+    AdminObj.addclient(client1);
     // Create another object
     file<<"client 2 "<<endl;
     Client client2;
@@ -240,5 +241,9 @@ int main()
     cout << "Client2 ("<<name1<<") Balance: ";
     client2.checkBalance();
     file.close();
+    AdminObj.addclient(client2);
+    cout<< "List All Clients:"<<endl;
+    AdminObj.listClient();
+
     return 0;
 }
