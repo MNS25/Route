@@ -232,8 +232,6 @@ int main()
         cout << "Error: Invalid sender or receiver name." << endl;
     }
 
-
-
     cout << "\nFinal balances after transfer:" << endl;
     cout << "Client1 ("<<name<<") Balance: ";
     client1.checkBalance();
