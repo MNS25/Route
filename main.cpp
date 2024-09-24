@@ -5,10 +5,12 @@
 #include <Validation.h>
 #include <Client.h>
 #include <Admin.h>
+#include <parser.h>
 using namespace std;
 
 int main()
 {
+    /*
 
     //Admin
     cout << "\nSetting up Admin details..." << endl;
@@ -242,6 +244,38 @@ int main()
     AdminObj.addclient(client2);
     cout<< "List All Clients:"<<endl;
     AdminObj.listClient();
+
+    */
+    string clientData = "1 Ahmed pass1234 2000";
+    string employeeData = "2 John adminpass 6000";
+    string adminData = "3 Sarah admin1234 7000";
+
+
+        Client client = Parser::parseToClient(clientData);
+        Employee employee = Parser::parseToEmployee(employeeData);
+        Admin admin = Parser::parseToAdmin(adminData);
+
+
+        cout << "Client Information:" << endl;
+        client.DisplayInfo();
+        client.checkBalance();
+        cout << endl;
+
+        cout << "Employee Information:" << endl;
+        employee.DisplayInfo();
+        cout << endl;
+
+        cout << "Admin Information:" << endl;
+        admin.DisplayInfo();
+        cout << endl;
+
+        cout << "Testing deposit for Client:" << endl;
+        client.Deposit(500);
+        client.checkBalance();
+
+        cout << "Testing withdraw for Client:" << endl;
+        client.withdraw(1000);
+        client.checkBalance();
 
     return 0;
 }

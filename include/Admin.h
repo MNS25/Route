@@ -1,6 +1,6 @@
 #ifndef ADMIN_H
 #define ADMIN_H
-#include <iostream>
+
 #include "Employee.h"
 #include <string>
 #include <vector>
@@ -12,6 +12,7 @@ private:
     vector<Employee>employees;
 public:
         Admin();
+        Admin(int id, string name, string password, double salary);
         //methods
         void addEmployee(const Employee& employee);
         Employee* searchEmployee(int id);

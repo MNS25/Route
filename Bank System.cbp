@@ -38,6 +38,9 @@
 		<Unit filename="include/Client.h" />
 		<Unit filename="include/DataSourceInterface.h" />
 		<Unit filename="include/Employee.h" />
+		<Unit filename="include/FileHelper.h" />
+		<Unit filename="include/FileManager.h" />
+		<Unit filename="include/Parser.h" />
 		<Unit filename="include/Validation.h" />
 		<Unit filename="include/person.h" />
 		<Unit filename="main.cpp" />
@@ -45,6 +48,9 @@
 		<Unit filename="src/Client.cpp" />
 		<Unit filename="src/DataSourceInterface.cpp" />
 		<Unit filename="src/Employee.cpp" />
+		<Unit filename="src/FileHelper.cpp" />
+		<Unit filename="src/FileManager.cpp" />
+		<Unit filename="src/Parser.cpp" />
 		<Unit filename="src/Validation.cpp" />
 		<Unit filename="src/person.cpp" />
 		<Extensions>

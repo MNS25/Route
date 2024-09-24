@@ -9,6 +9,10 @@ using namespace std;
 Admin::Admin() : Employee(){
 
 }
+Admin::Admin(int id, string name, string password, double salary) : Employee(id, name, password,salary)
+{
+
+}
 void Admin::addEmployee(const Employee& employee){
 employees.push_back(employee);
 }

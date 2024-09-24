@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1726587842 source:c:\users\a7amn\onedrive\desktop\bank system\main.cpp
+1727056113 source:c:\users\a7amn\onedrive\desktop\bank system\main.cpp
 	<iostream>
 	<fstream>
 	<person.h>
@@ -7,6 +7,7 @@
 	<Validation.h>
 	<Client.h>
 	<Admin.h>
+	<parser.h>
 
 1726455629 source:c:\users\a7amn\onedrive\desktop\bank system\src\person.cpp
 	"person.h"
@@ -46,7 +47,7 @@
 	"Validation.h"
 	<iostream>
 
-1726456703 source:c:\users\a7amn\onedrive\desktop\bank system\src\admin.cpp
+1727055270 source:c:\users\a7amn\onedrive\desktop\bank system\src\admin.cpp
 	"Admin.h"
 	"Employee.h"
 	<iostream>
@@ -54,8 +55,7 @@
 	<string>
 	<Employee.h>
 
-1726456684 c:\users\a7amn\onedrive\desktop\bank system\include\admin.h
-	<iostream>
+1727055386 c:\users\a7amn\onedrive\desktop\bank system\include\admin.h
 	"Employee.h"
 	<string>
 	<vector>
@@ -170,9 +170,43 @@
 1726067323 source:c:\users\a7amn\onedrive\desktop\bank system\src\datasourceinterface.cpp
 	"DataSourceInterface.h"
 
-1726067319 c:\users\a7amn\onedrive\desktop\bank system\include\datasourceinterface.h
+1727145638 c:\users\a7amn\onedrive\desktop\bank system\include\datasourceinterface.h
 	<iostream>
 	<Client.h>
 	<Employee.h>
+	<Admin.h>
+	<vector>
+
+1727055590 source:c:\users\a7amn\onedrive\desktop\bank system\src\parser.cpp
+	"Parser.h"
+	<iostream>
+	<Client.h>
+	<Employee.h>
+	<Admin.h>
+	<vector>
+	<sstream>
+	<cctype>
+	<string>
+
+1727055590 c:\users\a7amn\onedrive\desktop\bank system\include\parser.h
+	<vector>
+	<Client.h>
+	<Employee.h>
+	<Admin.h>
+
+1727145419 source:c:\users\a7amn\onedrive\desktop\bank system\src\filehelper.cpp
+	"FileHelper.h"
+	<fstream>
+	<string>
+	<vector>
+	<Client.h>
+	<parser.h>
+	<Employee.h>
+
+1727145456 c:\users\a7amn\onedrive\desktop\bank system\include\filehelper.h
+	<iostream>
+	<Client.h>
+	<Employee.h>
+	<vector>
 	<Admin.h>
 
