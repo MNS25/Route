@@ -36,6 +36,7 @@
 		</Compiler>
 		<Unit filename="include/Admin.h" />
 		<Unit filename="include/Client.h" />
+		<Unit filename="include/ClientManger.h" />
 		<Unit filename="include/DataSourceInterface.h" />
 		<Unit filename="include/Employee.h" />
 		<Unit filename="include/FileHelper.h" />
@@ -46,6 +47,7 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Admin.cpp" />
 		<Unit filename="src/Client.cpp" />
+		<Unit filename="src/ClientManger.cpp" />
 		<Unit filename="src/DataSourceInterface.cpp" />
 		<Unit filename="src/Employee.cpp" />
 		<Unit filename="src/FileHelper.cpp" />
