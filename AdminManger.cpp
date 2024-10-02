@@ -5,7 +5,7 @@
 
 
 
- void printAdminMenu() {
+void printAdminMenu() {
 
     cout << "Admin Menu:\n";
 
@@ -21,7 +21,7 @@
 
 
 
-   Admin* login(int id, const std::string& password) {
+Admin* login(int id, const std::string& password) {
 
         auto it = admins.find(id);
 
@@ -35,16 +35,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-   static bool AdminOptions(Employee* employee) {
+static bool AdminOptions(Employee* employee) {
 
     int choice;
 
